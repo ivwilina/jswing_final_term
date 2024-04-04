@@ -11,8 +11,8 @@ import java.sql.DriverManager;
  */
 public class connect_to_mysql {
     private static Connection connection;
-    private static String url = "jdbc:mysql://localhost:3306/demo1";
-    private static String user = "localhost";
+    private static String url = "jdbc:mysql://localhost:3306/demo";
+    private static String user = "root";
     private static String password = "";
 
     
