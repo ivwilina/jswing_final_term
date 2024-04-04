@@ -10,9 +10,9 @@ import java.sql.DriverManager;
  * @author ivwi3
  */
 public class connect_to_mysql {
-    private static Connection connection;
+    private static Connection connection=null;
     private static String url = "jdbc:mysql://localhost:3306/demo1";
-    private static String user = "localhost";
+    private static String user = "root";
     private static String password = "";
 
     
