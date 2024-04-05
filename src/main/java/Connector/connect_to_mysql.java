@@ -18,7 +18,9 @@ public class connect_to_mysql {
     
     public static Connection getConnection() {
         try {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, user, password);
+            
             return connection;
         } catch (Exception e) {
             System.out.println("Loi ket noi den database");
