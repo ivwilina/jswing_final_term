@@ -12,13 +12,15 @@ import java.sql.DriverManager;
 public class connect_to_mysql {
     private static Connection connection;
     private static String url = "jdbc:mysql://localhost:3306/demo1";
-    private static String user = "localhost";
+    private static String user = "root";
     private static String password = "";
 
     
     public static Connection getConnection() {
         try {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, user, password);
+            
             return connection;
         } catch (Exception e) {
             System.out.println("Loi ket noi den database");
