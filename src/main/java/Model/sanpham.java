@@ -152,7 +152,7 @@ public class sanpham {
     public void XoaLs() {
         try {
             con=connect_to_mysql.getConnection();
-            String sql = "DELETE from sach WHERE Masach=N'"+masp+"'";
+            String sql = "DELETE from sanpham WHERE masp=N'"+masp+"'";
             Statement st = con.createStatement();
             st.executeUpdate(sql);
         } catch (Exception e) {

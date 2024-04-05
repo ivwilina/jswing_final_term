@@ -367,7 +367,7 @@ public class sanpham_frame extends javax.swing.JFrame {
     public void XoaLs() {
         sp.setMasp(txtmsp.getText().trim());
         sp.XoaLs();
-        load_table(" ","","","","");
+        load_table("","","","","");
     }
 
     
